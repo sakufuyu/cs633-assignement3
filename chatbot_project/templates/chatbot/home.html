@@ -1,0 +1,30 @@
+<!-- templates/chatbot/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>ChatBot</h1>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="bot-message"> </div>
+        </div>
+        <div class="chat-input">
+            <form id="chat-form">
+                {% csrf_token %}
+                <input type="text" id="user-input" placeholder="type message...">
+                <button type="submit">send</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
