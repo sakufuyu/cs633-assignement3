@@ -1,0 +1,7 @@
+chatterbot==1.2.7
+chatterbot-corpus==1.2.2
+mathparse==0.1.5
+python-dateutil==2.9.0.post0
+spacy==3.8.7
+sqlalchemy==2.0.41
+tqdm==4.67.1
